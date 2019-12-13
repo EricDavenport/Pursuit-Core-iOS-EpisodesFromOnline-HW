@@ -12,7 +12,7 @@ class EpisodeListAPIClient {
   static func fetchEpisodes(for showID: Int,
                             completion: @escaping (Result<[Episodes], AppError>) -> ()) {
     
-    let urlString = "http://api.tvmaze.com/shows/\(showID)/episodes"
+    let urlString = "https://api.tvmaze.com/shows/\(showID)/episodes"
     
     guard let url = URL(string: urlString) else {
       completion(.failure(.badURL(urlString)))
@@ -26,7 +26,7 @@ class EpisodeListAPIClient {
         completion(.failure(appError))
       case .success(let data):
         do {
-          let episodes = try JSONDecoder().decode([Episodes].self, from: data)
+          let episodes = try JSONDecoder().decode([Episodes].self, from: data).sorted { $0.id < $1.id}
           completion(.success(episodes))
         } catch {
           completion(.failure(.decodingError(error)))

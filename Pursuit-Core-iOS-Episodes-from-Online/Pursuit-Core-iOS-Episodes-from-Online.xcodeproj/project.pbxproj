@@ -12,16 +12,17 @@
 		5819348D23A420D200E566FF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819348C23A420D200E566FF /* String+Extensions.swift */; };
 		5819348F23A4261100E566FF /* EpisodeListAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819348E23A4261100E566FF /* EpisodeListAPIClient.swift */; };
 		5819349123A426D300E566FF /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819349023A426D300E566FF /* EpisodeModel.swift */; };
+		5819349423A4393F00E566FF /* OnlineServicesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819349323A4393F00E566FF /* OnlineServicesTest.swift */; };
+		5819349623A43FE900E566FF /* ShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819349523A43FE900E566FF /* ShowCell.swift */; };
 		58C83C9223A3D617002C485D /* Network Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C83C9123A3D617002C485D /* Network Helper.swift */; };
 		58C83C9423A3D65E002C485D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C83C9323A3D65E002C485D /* AppError.swift */; };
 		58C83C9723A3DDBC002C485D /* ShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C83C9623A3DDBC002C485D /* ShowModel.swift */; };
 		58C83C9B23A419BD002C485D /* ShowsAPiC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C83C9A23A419BD002C485D /* ShowsAPiC.swift */; };
 		CD01CD5C232178AF002D0255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CD5B232178AF002D0255 /* AppDelegate.swift */; };
-		CD01CD5E232178AF002D0255 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CD5D232178AF002D0255 /* ViewController.swift */; };
+		CD01CD5E232178AF002D0255 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CD5D232178AF002D0255 /* ShowsViewController.swift */; };
 		CD01CD61232178AF002D0255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD01CD5F232178AF002D0255 /* Main.storyboard */; };
 		CD01CD63232178B2002D0255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD01CD62232178B2002D0255 /* Assets.xcassets */; };
 		CD01CD66232178B2002D0255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD01CD64232178B2002D0255 /* LaunchScreen.storyboard */; };
-		CD01CD71232178B2002D0255 /* Pursuit_Core_iOS_Episodes_from_OnlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01CD70232178B2002D0255 /* Pursuit_Core_iOS_Episodes_from_OnlineTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,19 +41,20 @@
 		5819348C23A420D200E566FF /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		5819348E23A4261100E566FF /* EpisodeListAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListAPIClient.swift; sourceTree = "<group>"; };
 		5819349023A426D300E566FF /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
+		5819349323A4393F00E566FF /* OnlineServicesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineServicesTest.swift; sourceTree = "<group>"; };
+		5819349523A43FE900E566FF /* ShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCell.swift; sourceTree = "<group>"; };
 		58C83C9123A3D617002C485D /* Network Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Helper.swift"; sourceTree = "<group>"; };
 		58C83C9323A3D65E002C485D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		58C83C9623A3DDBC002C485D /* ShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModel.swift; sourceTree = "<group>"; };
 		58C83C9A23A419BD002C485D /* ShowsAPiC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsAPiC.swift; sourceTree = "<group>"; };
 		CD01CD58232178AF002D0255 /* Pursuit-Core-iOS-Episodes-from-Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pursuit-Core-iOS-Episodes-from-Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD01CD5B232178AF002D0255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD01CD5D232178AF002D0255 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD01CD5D232178AF002D0255 /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
 		CD01CD60232178AF002D0255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD01CD62232178B2002D0255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD01CD65232178B2002D0255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD01CD67232178B2002D0255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD01CD6C232178B2002D0255 /* Pursuit-Core-iOS-Episodes-from-OnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pursuit-Core-iOS-Episodes-from-OnlineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD01CD70232178B2002D0255 /* Pursuit_Core_iOS_Episodes_from_OnlineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pursuit_Core_iOS_Episodes_from_OnlineTests.swift; sourceTree = "<group>"; };
 		CD01CD72232178B2002D0255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,15 @@
 				5819348C23A420D200E566FF /* String+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5819349223A4375A00E566FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD01CD5D232178AF002D0255 /* ShowsViewController.swift */,
+				5819349523A43FE900E566FF /* ShowCell.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		58C83C9023A3D5F1002C485D /* Network Services */ = {
@@ -125,10 +136,10 @@
 		CD01CD5A232178AF002D0255 /* Pursuit-Core-iOS-Episodes-from-Online */ = {
 			isa = PBXGroup;
 			children = (
+				5819349223A4375A00E566FF /* Controllers */,
 				58C83C9523A3DD79002C485D /* Models */,
 				58C83C9023A3D5F1002C485D /* Network Services */,
 				CD01CD5B232178AF002D0255 /* AppDelegate.swift */,
-				CD01CD5D232178AF002D0255 /* ViewController.swift */,
 				CD01CD5F232178AF002D0255 /* Main.storyboard */,
 				CD01CD62232178B2002D0255 /* Assets.xcassets */,
 				CD01CD64232178B2002D0255 /* LaunchScreen.storyboard */,
@@ -141,7 +152,7 @@
 		CD01CD6F232178B2002D0255 /* Pursuit-Core-iOS-Episodes-from-OnlineTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD01CD70232178B2002D0255 /* Pursuit_Core_iOS_Episodes_from_OnlineTests.swift */,
+				5819349323A4393F00E566FF /* OnlineServicesTest.swift */,
 				CD01CD72232178B2002D0255 /* Info.plist */,
 			);
 			path = "Pursuit-Core-iOS-Episodes-from-OnlineTests";
@@ -250,10 +261,11 @@
 			files = (
 				58C83C9423A3D65E002C485D /* AppError.swift in Sources */,
 				5819348F23A4261100E566FF /* EpisodeListAPIClient.swift in Sources */,
-				CD01CD5E232178AF002D0255 /* ViewController.swift in Sources */,
+				CD01CD5E232178AF002D0255 /* ShowsViewController.swift in Sources */,
 				58C83C9223A3D617002C485D /* Network Helper.swift in Sources */,
 				58C83C9B23A419BD002C485D /* ShowsAPiC.swift in Sources */,
 				5819349123A426D300E566FF /* EpisodeModel.swift in Sources */,
+				5819349623A43FE900E566FF /* ShowCell.swift in Sources */,
 				5819348D23A420D200E566FF /* String+Extensions.swift in Sources */,
 				CD01CD5C232178AF002D0255 /* AppDelegate.swift in Sources */,
 				5819348823A41FF900E566FF /* UIViewController+Alerts.swift in Sources */,
@@ -266,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD01CD71232178B2002D0255 /* Pursuit_Core_iOS_Episodes_from_OnlineTests.swift in Sources */,
+				5819349423A4393F00E566FF /* OnlineServicesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -406,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -422,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Pursuit-Core-iOS-Episodes-from-Online/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Pursuit-Core-iOS-Episodes-from-Online/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

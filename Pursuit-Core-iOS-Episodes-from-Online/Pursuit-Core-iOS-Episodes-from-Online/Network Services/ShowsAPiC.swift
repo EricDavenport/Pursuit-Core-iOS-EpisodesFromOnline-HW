@@ -9,10 +9,12 @@
 import Foundation
 
 class ShowAPIClient {
-  static func fetchShows(for searchQuary: String,
-                         completion: @escaping (Result<[Shows], AppError>) -> ()) {
+  static func fetchShows(for searchQuery: String,
+                         completion: @escaping (Result<[Show], AppError>) -> ()) {
     
-  let urlString = "http://api.tvmaze.com/search/shows?q=\(searchQuary)"
+    let searchQuery = searchQuery.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "friends"
+    
+  let urlString = "https://api.tvmaze.com/search/shows?q=\(searchQuery)"
   
     guard let url = URL(string: urlString) else {
       completion(.failure(.badURL(urlString)))
@@ -27,7 +29,8 @@ class ShowAPIClient {
         completion(.failure(appError))
       case .success(let data):
         do {
-          let shows = try JSONDecoder().decode([Shows].self, from: data)
+          let results = try JSONDecoder().decode([ShowList].self, from: data)
+          let shows = results.map { $0.show }
           completion(.success(shows))
         } catch {
           completion(.failure(.decodingError(error)))

@@ -8,23 +8,28 @@
 
 import Foundation
 struct ShowList: Decodable {
-  let shows: [Shows]
+  let show: Show
 }
 
-struct Shows: Decodable {
+struct Show: Decodable {
+  let name: String
   let id: Int
   let url: String
   let language: String
-  let genre: [String]
+  let genres: [String]
   let runtime: Int
-  let officialSite: String
-  let priemiered: String
-  let rating: String
+  let officialSite: String?
+  let premiered: String
+  let rating: Average
   let image: ImageSize
-  let summary: String
+  let summary: String?
 }
 
 struct ImageSize: Decodable {
-  let image: String
+  let medium: String
   let original: String
+}
+
+struct Average: Decodable {
+  let average: Double?
 }
