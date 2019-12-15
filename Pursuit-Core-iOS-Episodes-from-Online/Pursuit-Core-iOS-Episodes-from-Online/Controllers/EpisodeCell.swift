@@ -15,7 +15,10 @@ class EpisodeCell: UITableViewCell {
   @IBOutlet weak var episodeNumberLabel: UILabel!
   
   func configureCell(for episode: Episodes) {
-    episodeImageView.getImage(with: episode.image!.original) { (result) in
+//    episodeNumberLabel.text = episode.number.description
+//    episodeTitleLabel.text = episode.name
+    
+    episodeImageView.getImage(with: episode.image?.original ?? "https://static.tvmaze.com/uploads/images/original_untouched/84/212394.jpg") { (result) in
       switch result {
       case .failure:
         DispatchQueue.main.async {
@@ -27,13 +30,11 @@ class EpisodeCell: UITableViewCell {
         DispatchQueue.main.async {
           self.episodeImageView.image = image
           self.episodeTitleLabel.text = episode.name
-          self.episodeNumberLabel.text = "Season: \(episode.season.description)/nEpisode: \(episode.number.description) "
+          self.episodeNumberLabel.text = "Season: \(episode.season.description)\nEpisode: \(episode.number.description) "
         }
       }
 
     }
-    self.episodeTitleLabel.text = episode.name
-    self.episodeNumberLabel.text = "Season: \(episode.season.description)/nEpisode: \(episode.number.description) "
   }
 
   

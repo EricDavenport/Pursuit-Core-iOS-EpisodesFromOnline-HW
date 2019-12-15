@@ -10,6 +10,7 @@ import UIKit
 
 class ShowsViewController: UIViewController {
 
+  @IBOutlet weak var searchBar: UISearchBar!
   @IBOutlet weak var tableView: UITableView!
 
   var shows = [Show]() {
@@ -25,6 +26,7 @@ class ShowsViewController: UIViewController {
         super.viewDidLoad()
       tableView.dataSource = self
       tableView.delegate = self
+      searchBar.delegate = self
       searchShows(searchQuery: "star")
       dump(shows)
     }
@@ -74,6 +76,17 @@ extension ShowsViewController: UITableViewDataSource, UITableViewDelegate {
     return 265
   }
   
-  
+}
+
+extension ShowsViewController: UISearchBarDelegate {
+  func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    searchBar.resignFirstResponder()
+    
+    guard let searchText = searchBar.text else {
+      print("missing search text")
+      return searchShows(searchQuery: "search")
+    }
+    searchShows(searchQuery: searchText)
+  }
 }
 

@@ -28,6 +28,7 @@ class EpisodeViewController: UIViewController {
       tableView.dataSource = self
       tableView.delegate = self
       searchEpisodes(for: series.id)
+      
       //print("Variable: \(episodes)")
     
       }
@@ -56,7 +57,7 @@ extension EpisodeViewController: UITableViewDataSource, UITableViewDelegate {
     
     let episode = episodes[indexPath.row]
     
-    episodeCell.textLabel!.text = episode.name
+    episodeCell.configureCell(for: episode)
     
     return episodeCell
     
