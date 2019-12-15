@@ -32,6 +32,17 @@ class EpisodeViewController: UIViewController {
       //print("Variable: \(episodes)")
     
       }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let detailVC = segue.destination as? DetailViewController,
+      let indexPath = tableView.indexPathForSelectedRow else {
+        fatalError("Failure to segue to DetailVC properly")
+    }
+    
+    detailVC.episode = episodes[indexPath.row]
+    
+    
+  }
     
   func searchEpisodes(for seriesID: Int) {
     EpisodeListAPIClient.fetchEpisodes(for: seriesID, completion: { (result) in
@@ -46,6 +57,8 @@ class EpisodeViewController: UIViewController {
   )
     
   }
+  
+  
 
 }
 

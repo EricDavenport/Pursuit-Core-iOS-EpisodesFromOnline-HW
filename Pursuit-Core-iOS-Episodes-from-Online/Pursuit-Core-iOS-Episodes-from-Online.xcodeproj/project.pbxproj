@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5818E83F23A6E273004584FE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818E83E23A6E273004584FE /* DetailViewController.swift */; };
 		5819348823A41FF900E566FF /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819348723A41FF900E566FF /* UIViewController+Alerts.swift */; };
 		5819348B23A4204200E566FF /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819348A23A4204200E566FF /* UIImageView+Extensions.swift */; };
 		5819348D23A420D200E566FF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819348C23A420D200E566FF /* String+Extensions.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5818E83E23A6E273004584FE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5819348723A41FF900E566FF /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		5819348A23A4204200E566FF /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		5819348C23A420D200E566FF /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				5819349523A43FE900E566FF /* ShowCell.swift */,
 				587AA3F823A6958900E57114 /* EpisodeViewController.swift */,
 				587AA3FA23A69FFE00E57114 /* EpisodeCell.swift */,
+				5818E83E23A6E273004584FE /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				5819348823A41FF900E566FF /* UIViewController+Alerts.swift in Sources */,
 				5819348B23A4204200E566FF /* UIImageView+Extensions.swift in Sources */,
 				587AA3FB23A69FFE00E57114 /* EpisodeCell.swift in Sources */,
+				5818E83F23A6E273004584FE /* DetailViewController.swift in Sources */,
 				587AA3F923A6958900E57114 /* EpisodeViewController.swift in Sources */,
 				58C83C9723A3DDBC002C485D /* ShowModel.swift in Sources */,
 			);
