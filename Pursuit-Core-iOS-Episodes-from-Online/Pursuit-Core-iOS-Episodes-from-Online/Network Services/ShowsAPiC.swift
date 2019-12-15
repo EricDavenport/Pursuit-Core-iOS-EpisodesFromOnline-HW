@@ -12,7 +12,7 @@ class ShowAPIClient {
   static func fetchShows(for searchQuery: String,
                          completion: @escaping (Result<[Show], AppError>) -> ()) {
     
-    let searchQuery = searchQuery.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "friends"
+    let searchQuery = searchQuery.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "star"
     
   let urlString = "https://api.tvmaze.com/search/shows?q=\(searchQuery)"
   

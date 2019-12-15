@@ -25,12 +25,12 @@ class ShowsViewController: UIViewController {
         super.viewDidLoad()
       tableView.dataSource = self
       tableView.delegate = self
-      getShows(searchQuery: "friends")
+      searchShows(searchQuery: "star")
       dump(shows)
     }
   
   // TODO: completion handler
-  func getShows(searchQuery: String) {
+  func searchShows(searchQuery: String) {
     ShowAPIClient.fetchShows(for: searchQuery, completion: {[weak self] (result) in
       switch result {
       case .failure(let appError):
@@ -42,6 +42,14 @@ class ShowsViewController: UIViewController {
       }
     }
     )
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let seriesDetailVC = segue.destination as? EpisodeViewController,
+      let indexPath = tableView.indexPathForSelectedRow else {
+        fatalError("failed to segue to episode vc properly")
+    }
+    seriesDetailVC.series = shows[indexPath.row]
   }
 }
 

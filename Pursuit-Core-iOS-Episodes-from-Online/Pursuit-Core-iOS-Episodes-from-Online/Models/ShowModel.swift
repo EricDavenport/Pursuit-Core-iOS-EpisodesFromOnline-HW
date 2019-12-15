@@ -14,15 +14,15 @@ struct ShowList: Decodable {
 struct Show: Decodable {
   let name: String
   let id: Int
-  let url: String
-  let language: String
-  let genres: [String]
-  let runtime: Int
-  let officialSite: String?
-  let premiered: String
+//  let url: String
+//  let language: String
+//  let genres: [String]
+//  let runtime: Int
+//  let officialSite: String?
+//  let premiered: String
   let rating: Average
-  let image: ImageSize
-  let summary: String?
+  let image: ImageSize?
+//  let summary: String?
 }
 
 struct ImageSize: Decodable {
